@@ -26,8 +26,8 @@
       crossorigin="anonymous">
 
     <!-- Option 1: Include in HTML -->
-    <!-- <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
       rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -38,108 +38,97 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <header id="header" class="flex-column justify-content-center">
+
+    <i class="bi bi-menu-button-wide-fill mobile-nav-toggle d-xl-none"></i>
+
+    <header id="header" class="d-flex flex-column justify-content-center">
       <nav id="navbar" class="navbar nav-menu">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i
-                class="bx bx-home"></i><span>Home</span></a></li>
+                class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i
                 class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i
-                class="bx bx-file-blank"> <span>Resume</span></i> </a></li>
+                class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <!-- <li><a href="#resume" class="nav-link scrollto"><i
+                class="bx bx-file-blank"> <span>Resume</span></i></a></li> -->
           <li><a href="#portfolio" class="nav-link scrollto"><i
-                class="bx bx-book-content"></i><span>Portfolio</span> </a></li>
+                class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
 
           <li><a href="#contact" class="nav-link scrollto"><i
-                class="bx bx-envelope"></i><span>Contact</span> </a></li>
+                class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End of Navbar -->
 
-      </header>
-      <!-- End of Navbar -->
+    <!-- hero Section Start -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Jay Kumar</h1>
+        <p>I'm <span class="typed"
+            data-typed-items="Author, Teacher, Video game Dev., Full Stack Developer, Student, Painter, Designer"></span></p>
 
-      <!-- hero Section Start -->
-      <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container" data-aos="zoom-in" data-aos-delay="100">
-          <h1>Jay Kumar</h1>
-          <p>I'm <span class="typed"
-              data-typed-items="Author, Teacher, Video game Dev., Full Stack Developer, Student, Painter, Designer"></span></p>
-
-          <div class="social-links">
-            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="facebook"><i
-                class='bx bxl-facebook-square'></i></a>
-            <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
-            <a href="#" class="github"><i class='bx bxl-github'></i></a>
-
-          </div>
-        </div>
-      </section>
-
-      <main id="main">
-        <!-- ======= About Section ====== = -->
-
-      </main>
-      <!-- footer start -->
-      <footer id="footer">
-        <div class="container">
-          <h3>Jayesh Kumar baviskar</h3>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            eveniet distinctio laborum assumenda eum vel corporis quidem nobis
-            incidunt beatae, officia iste officiis sint dolores mollitia
-            explicabo, alias voluptatem omnis?</p>
-
-          <div class="social-links">
-            <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="facebook"><i
-                class='bx bxl-facebook-square'></i></a>
-            <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
-            <a href="#" class="github"><i class='bx bxl-github'></i></a>
-          </div>
-
-          <div class="copyright">
-            Design by <strong><span>Jayesh Kumar Baviskar</span></strong>. All
-            Rights
-
-          </div>
+        <div class="social-links">
+          <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="facebook"><i
+              class='bx bxl-facebook-square'></i></a>
+          <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" class="github"><i class='bx bxl-github'></i></a>
 
         </div>
-      </footer>
+      </div>
+    </section>
 
-      <!-- footer end -->
+    <main id="main">
+      <!-- ======= About Section ====== = -->
 
-    </body>
+    </main>
+    <!-- footer start -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Jayesh Kumar baviskar</h3>
 
-    <!-- Vender Js files -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- main js -->
-    <script>
-      const typed = select(".typed");
-      if (typed) {
-        let typed_strings = typed.getAttribute("data-typed-items");
-        typed_strings = typed_strings.split(",");
-        new Typed(".typed", {
-          strings: typed_strings,
-          loop: true,
-          typeSpeed: 100,
-          backSpeed: 50,
-          backDelay: 2000,
-        });
-      }
-    </script>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          eveniet distinctio laborum assumenda eum vel corporis quidem nobis
+          incidunt beatae, officia iste officiis sint dolores mollitia
+          explicabo, alias voluptatem omnis?</p>
 
-    <script>
-      AOS.init();
-    </script>
-    <!-- <script src="./assets/js/main.js"></script> -->
-  </html>
+        <div class="social-links">
+          <a href="#" class="instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="#" class="facebook"><i
+              class='bx bxl-facebook-square'></i></a>
+          <a href="#" class="linkedin"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" class="github"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="copyright">
+          Design by <strong><span>Jayesh Kumar Baviskar</span></strong>. All
+          Rights
+
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+  </body>
+
+  <!-- Vender Js files -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- main js -->
+
+  <script src="./assets/js/main.js"></script>
+</html>

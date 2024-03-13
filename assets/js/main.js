@@ -28,8 +28,16 @@
 
   /********  hero typing effects adding end *********/
 
-})(
+  /*********** mobile nav-bar toggle **********/
+
+  on("click", ".mobile-nav-toggle", function (e) {
+    select("body").classList.toggle("mobile-nav-active");
+    // e.preventDefault();
+    this.classList.toggle("bi-menu-button-wide-fill");
+    this.classList.toggle("bi-x");
+  });
+
 
 
   
-);
+})();
