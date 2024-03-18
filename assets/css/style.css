@@ -297,7 +297,7 @@ nav-menu {
   outline: none !important;
   line-height: 0;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 6px;
   padding: 5px;
 }
 
