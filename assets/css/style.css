@@ -319,5 +319,65 @@ nav-menu {
   background-color: #0563bb;
 }
 
+/***********general section start****************/
 
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
 
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5vh;
+  color: #067ded;
+}
+
+.section-title p {
+  margin-bottom: 35px;
+}
+
+/***********general section end****************/
+
+/************ about us start  **********/
+
+.about .content h3 {
+  font-size: 25px;
+  color: #728394;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.about .content ul {
+  padding: 0;
+  list-style: none;
+}
+
+.about .content ul li {
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.about .content ul strong {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.about .content ul i {
+  font-size: 26px;
+  margin-right: 6px;
+  color: #0563bb;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}

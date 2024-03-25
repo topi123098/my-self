@@ -23,10 +23,10 @@
         selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
   /***************** SHOW MENU ON SCROLL ******************/
-  
+
   /*********** mobile nav-bar toggle start **********/
 
   on("click", ".mobile-nav-toggle", function (e) {
@@ -48,6 +48,40 @@
   });
 
   /******************* animation on scroll js end *******************/
+
+  /*******************nav bar links active state on scroll start *******/
+  const onscroll = (el, listener) => {
+    el.addEventListener("scroll", listener);
+  };
+
+  let navbarlinks = select("#navbar .scrollto", true);
+  const navbarlinksActive = () => {
+    let position = window.scrollY + 200;
+    navbarlinks.forEach((nav) => {
+      if (!nav.hash) return;
+      let section = select(nav.hash);
+      if (!section) return;
+      if (
+        position >= section.offsetTop &&
+        position <= section.offsetTop + section.offsetHeight
+      ) {
+        nav.classList.add("active");
+      } else {
+        nav.classList.remove("active");
+      }
+    });
+  };
+
+  window.addEventListener("load", navbarlinksActive);
+  onscroll(document, navbarlinksActive);
+
+  const scrollto = (el) => {
+    let elementPos = select(el).offsetTop;
+    window.scrollTo({
+      top: elementPos,
+      behavior: "smooth",
+    });
+  };
 
   /********  hero typing effects adding start *********/
   const typed = select(".typed");
